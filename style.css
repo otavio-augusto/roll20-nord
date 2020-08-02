@@ -1,0 +1,295 @@
+@-moz-document domain("app.roll20.net") {
+:root {
+    --dark1: #2E3440;
+    --dark2: #3B4252;
+    --dark3: #434C5E;
+    --dark4: #4C566A;
+
+    --light1: #D8DEE9;
+    --light2: #E5E9F0;
+    --light3: #ECEFF4;
+
+    --accent1: #8FBCBB;
+    --accent2: #88C0D0;
+    --accent3: #81A1C1;
+    --accent4: #5E81AC;
+
+    --color1: #BF616A;
+    --color2: #D08770;
+    --color3: #EBCB8B;
+    --color4: #A3BE8C;
+    --color5: #B48EAD;
+}
+/*----------------------------*/
+/*Rightside Bar Costumizations*/
+/*----------------------------*/
+#rightsidebar ul.tabmenu {
+    border: none;
+}
+
+#rightsidebar {
+    background-color: var(--dark1) !important;
+    border-left: none;
+    border-radius: 0;
+}
+
+#rightsidebar .ui-tabs-panel {
+    background-color: var(--dark1) !important;
+}
+
+#rightsidebar ul.tabmenu {
+    background-color: var(--dark1) !important;
+}
+
+#rightsidebar .ui-tabs-nav li.ui-state-active a {
+    color: var(--color5);
+    text-shadow: none;
+}
+
+#rightsidebar .ui-tabs-nav .pictos,
+#rightsidebar .ui-tabs-nav .pictostwo {
+    color: var(--accent1);
+    text-shadow: none;
+}
+
+/*----------------------------*/
+/*----Chat Costumizations-----*/
+/*----------------------------*/
+.textchatcontainer .by {
+    color: var(--light1);
+}
+
+.textchatcontainer.withoutavatars .message {
+    background-color: var(--dark1);
+    color: var(--light1);
+}
+
+.sheet-rolltemplate-dmg .inlinerollresult.fullfail {
+    color: var(--light1);
+}
+
+.sheet-rolltemplate-simple div.sheet-container,
+.sheet-rolltemplate-simple3D div.sheet-container,
+.sheet-rolltemplate-skill div.sheet-container,
+.sheet-rolltemplate-atk div.sheet-container,
+.sheet-rolltemplate-atkdmg div.sheet-container.sheet-atk,
+.sheet-rolltemplate-dmg div.sheet-atk,
+.sheet-rolltemplate-dmg div.sheet-container,
+.sheet-rolltemplate-atkdmg div.sheet-container.sheet-damagetemplate,
+.sheet-rolltemplate-atk div.sheet-desc,
+.sheet-rolltemplate-atkdmg div.sheet-desc,
+.sheet-rolltemplate-dmg div.sheet-desc,
+.sheet-rolltemplate-desc div.sheet-desc {
+    background: var(--dark3);
+    color: var(--accent1);
+    border-radius: 0;
+}
+
+.textchatcontainer.withoutavatars .message .spacer {
+    background-color: var(--dark4);
+}
+
+.textchatcontainer .formula,
+.textchatcontainer .rolled {
+    background-color: var(--dark3);
+    color: var(--accent1);
+    border-radius: 0;
+    border-color: var(--accent4);
+}
+
+.diceroll .didroll {
+    color: var(--dark4);
+    text-shadow: -1px -1px 1px var(--light1),
+    1px -1px 1px var(--light1),
+    -1px 1px 1px var(--light1),
+    1px 1px 1px var(--light1)
+}
+
+.sheet-rolltemplate-atkdmg .sheet-sublabel span,
+.sheet-rolltemplate-dmg .sheet-sublabel span {
+    color: var(--light1) !important;
+}
+
+.sheet-rolltemplate-dmg .sheet-damagetemplate .inlinerollresult.fullfail {
+    color: var(--color1);
+    background-color: #0000;
+}
+
+.diceroll.critsuccess .didroll {
+    color: var(--color1);
+}
+
+.textchatcontainer .inlinerollresult {
+    background-color: var(--dark4);
+    border: 2px solid var(--color3);
+}
+
+.textchatcontainer .inlinerollresult.fullcrit {
+    background-color: var(--dark4);
+    border: 2px solid var(--color4);
+}
+
+.textchatcontainer .inlinerollresult.fullfail {
+    background-color: var(--dark4);
+    border: 2px solid var(--color1);
+}
+
+.textchatcontainer .inlinerollresult.importantroll {
+    background-color: var(--dark4);
+    border: 2px solid var(--accent4);
+}
+
+.sheet-rolltemplate-atk .sheet-advspacer,
+.sheet-rolltemplate-simple .sheet-advspacer {
+    border: 1px solid var(--dark4);
+}
+
+.sheet-rolltemplate-atk a[href^="~"] {
+    color: var(--light1);
+}
+
+.sheet-rolltemplate-npcaction .sheet-container {
+    background-color: var(--dark3);
+    border: none;
+}
+
+.sheet-rolltemplate-npcaction .sheet-header {
+    color: var(--light1);
+}
+
+.sheet-rolltemplate-npcaction div.sheet-arrow-right {
+    border-left: 14em solid var(--color5);
+}
+
+/*TEXT CHAT*/
+#textchat-input {
+    background: var(--dark2);
+    padding-left: 10px;
+}
+
+#textchat-notifier {
+    background: var(--dark2);
+    color: var(--light1);
+    top: -25px;
+}
+
+#textchat-input textarea {
+    background: var(--dark4);
+    border-radius: 0;
+    border: none;
+    border-color: var(--accent1);
+    color: var(--light1);
+}
+
+#textchat-input {
+    border-top: none;
+}
+#textchat-input label {
+    color: var(--light1);
+}
+#speakingas,
+#textchat-input button {
+    background: var(--dark4);
+    color: var(--light1);
+    border-radius: 0;
+    border: none;
+}
+
+
+::-webkit-scrollbar {
+    background-color: var(--dark2);
+    width: 0px;
+}
+::-webkit-scrollbar-corner {
+    background-color: var(--dark2);
+    width: 0px;
+}
+
+/*----------------------------*/
+/*-Compendium Costumizations--*/
+/*----------------------------*/
+.dd-item > button:before,
+.dd-item .namecontainer,
+div.folder-title {
+    color: var(--light1);
+}
+
+.spacer {
+    background: none;
+}
+
+/*----------------------------*/
+/*---Handout Costumizations---*/
+/*----------------------------*/
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) div.sheet-page.sheet-core > div.sheet-header,
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) div.sheet-page.sheet-options > div.sheet-header,
+.charsheet .sheet-body,
+.ui-draggable .ui-dialog-titlebar,
+.ui-dialog .characterdialog.ui-dialog-content {
+    background-color: var(--dark1);
+}
+
+.charsheet .sheet-header span,
+.charsheet .sheet-header input,
+.ui-dialog .ui-dialog-title,
+.nav > li > a {
+    color: var(--light1);
+}
+
+
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) div.sheet-page > div.sheet-header::after {
+    background: none;
+}
+
+
+
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) div.sheet-page.sheet-core > div.sheet-header,
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) div.sheet-page.sheet-options > div.sheet-header {
+    background: url("https://i.imgur.com/hFrBIyM.png");
+    background-size: 850px 140px;
+}
+
+.charsheet .sheet-licensecontainer .sheet-container.sheet-pc .sheet-header .sheet-header-info {
+    background: url("https://i.imgur.com/6jqhdcR.png");
+    background-size: 464px 100.6677px;
+    background-origin: padding-box;
+}
+
+.charsheet .sheet-npc_toggle[value="0"] ~ .sheet-pc,
+.charsheet .sheet-npc_toggle[value="1"] ~ .sheet-npc {
+    background-color: var(--dark1);
+}
+
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-attributes-container {
+    background: none;
+    background-color: var(--dark2);
+}
+
+/*
+.charsheet .sheet-attr-container button[type=roll],
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-attr-container{
+    background: none !important;
+    background-color: var(--dark3) !important;
+    border-radius: 0;
+    color: var(--light1);
+}
+*/
+
+/*-Advantage, Whisper and Tabs-*/
+.charsheet .sheet-advantagetoggle input[type=radio]:checked {
+    background-color: #0000;
+}
+
+.charsheet input[type=radio].sheet-tab-button + span,
+.charsheet .sheet-advantagetoggle input[type=radio] + span {
+    color: var(--light1);
+    background-color: var(--dark3);
+    border-radius: 0;
+    border-color: var(--dark3);
+}
+
+.charsheet input[type=radio].sheet-tab-button:checked + span,
+.charsheet .sheet-advantagetoggle input[type=radio]:checked + span {
+    background-color: var(--color5);
+}
+}
