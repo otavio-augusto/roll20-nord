@@ -1,295 +1,363 @@
-@-moz-document domain("app.roll20.net") {
 :root {
-    --dark1: #2E3440;
-    --dark2: #3B4252;
-    --dark3: #434C5E;
-    --dark4: #4C566A;
-
-    --light1: #D8DEE9;
-    --light2: #E5E9F0;
-    --light3: #ECEFF4;
-
-    --accent1: #8FBCBB;
-    --accent2: #88C0D0;
-    --accent3: #81A1C1;
-    --accent4: #5E81AC;
-
-    --color1: #BF616A;
-    --color2: #D08770;
-    --color3: #EBCB8B;
-    --color4: #A3BE8C;
-    --color5: #B48EAD;
+--dark1:#2E3440;
+--dark2:#3B4252;
+--dark3:#434C5E;
+--dark4:#4C566A;
+--light1:#D8DEE9;
+--light2:#E5E9F0;
+--light3:#ECEFF4;
+--accent1:#8FBCBB;
+--accent2:#88C0D0;
+--accent3:#81A1C1;
+--accent4:#5E81AC;
+--color1:#BF616A;
+--color2:#D08770;
+--color3:#EBCB8B;
+--color4:#A3BE8C;
+--color5:#B48EAD;
 }
-/*----------------------------*/
-/*Rightside Bar Costumizations*/
-/*----------------------------*/
+
+body {
+background:none;
+background-color:var(--dark1)!important;
+}
+
 #rightsidebar ul.tabmenu {
-    border: none;
+border:none;
+background-color:var(--dark1)!important;
 }
 
 #rightsidebar {
-    background-color: var(--dark1) !important;
-    border-left: none;
-    border-radius: 0;
+background-color:var(--dark1)!important;
+border-left:none;
+border-radius:0;
 }
 
-#rightsidebar .ui-tabs-panel {
-    background-color: var(--dark1) !important;
+.ui-resizable-n,.ui-resizable-s,.ui-resizable-e,.ui-resizable-w {
+background-color:var(--dark1)!important;
+color:var(--dark1)!important;
 }
 
-#rightsidebar ul.tabmenu {
-    background-color: var(--dark1) !important;
+.ui-dialog,.charsheet .sheet-licensecontainer,#rightsidebar .ui-tabs-panel {
+background-color:var(--dark1)!important;
+color:#0000!important;
+border:none!important;
 }
 
 #rightsidebar .ui-tabs-nav li.ui-state-active a {
-    color: var(--color5);
-    text-shadow: none;
+color:var(--color5);
+text-shadow:none;
 }
 
-#rightsidebar .ui-tabs-nav .pictos,
-#rightsidebar .ui-tabs-nav .pictostwo {
-    color: var(--accent1);
-    text-shadow: none;
+#rightsidebar .ui-tabs-nav .pictos,#rightsidebar .ui-tabs-nav .pictostwo {
+color:var(--accent1);
+text-shadow:none;
 }
 
-/*----------------------------*/
-/*----Chat Costumizations-----*/
-/*----------------------------*/
-.textchatcontainer .by {
-    color: var(--light1);
+.ui-dialog .ui-dialog-titlebar,.folderroot .dd-content {
+border:none!important;
 }
 
-.textchatcontainer.withoutavatars .message {
-    background-color: var(--dark1);
-    color: var(--light1);
+.handout .dd-content .token {
+background:url(https://i.imgur.com/CLIUTZs.png)!important;
+width:28px;
+height:28px;
 }
 
-.sheet-rolltemplate-dmg .inlinerollresult.fullfail {
-    color: var(--light1);
+.handout .dd-content .token img {
+opacity:0;
 }
 
-.sheet-rolltemplate-simple div.sheet-container,
-.sheet-rolltemplate-simple3D div.sheet-container,
-.sheet-rolltemplate-skill div.sheet-container,
-.sheet-rolltemplate-atk div.sheet-container,
-.sheet-rolltemplate-atkdmg div.sheet-container.sheet-atk,
-.sheet-rolltemplate-dmg div.sheet-atk,
-.sheet-rolltemplate-dmg div.sheet-container,
-.sheet-rolltemplate-atkdmg div.sheet-container.sheet-damagetemplate,
-.sheet-rolltemplate-atk div.sheet-desc,
-.sheet-rolltemplate-atkdmg div.sheet-desc,
-.sheet-rolltemplate-dmg div.sheet-desc,
-.sheet-rolltemplate-desc div.sheet-desc {
-    background: var(--dark3);
-    color: var(--accent1);
-    border-radius: 0;
+.ui-dialog .ui-dialog-content,.textchatcontainer.withoutavatars .message {
+background-color:var(--dark1);
+color:var(--light1);
+}
+
+.sheet-rolltemplate-simple div.sheet-container,.sheet-rolltemplate-simple3D div.sheet-container,.sheet-rolltemplate-skill div.sheet-container,.sheet-rolltemplate-atk div.sheet-container,.sheet-rolltemplate-atkdmg div.sheet-container.sheet-atk,.sheet-rolltemplate-dmg div.sheet-atk,.sheet-rolltemplate-dmg div.sheet-container,.sheet-rolltemplate-atkdmg div.sheet-container.sheet-damagetemplate,.sheet-rolltemplate-atk div.sheet-desc,.sheet-rolltemplate-atkdmg div.sheet-desc,.sheet-rolltemplate-dmg div.sheet-desc,.sheet-rolltemplate-desc div.sheet-desc {
+background:var(--dark3);
+color:var(--accent1);
+border-radius:0;
 }
 
 .textchatcontainer.withoutavatars .message .spacer {
-    background-color: var(--dark4);
+background-color:var(--dark4)!important;
 }
 
-.textchatcontainer .formula,
-.textchatcontainer .rolled {
-    background-color: var(--dark3);
-    color: var(--accent1);
-    border-radius: 0;
-    border-color: var(--accent4);
+.textchatcontainer .formula,.textchatcontainer .rolled {
+background-color:var(--dark3);
+color:var(--accent1);
+border-radius:0;
+border-color:var(--accent4);
 }
 
 .diceroll .didroll {
-    color: var(--dark4);
-    text-shadow: -1px -1px 1px var(--light1),
-    1px -1px 1px var(--light1),
-    -1px 1px 1px var(--light1),
-    1px 1px 1px var(--light1)
-}
-
-.sheet-rolltemplate-atkdmg .sheet-sublabel span,
-.sheet-rolltemplate-dmg .sheet-sublabel span {
-    color: var(--light1) !important;
+color:var(--dark4);
+text-shadow:-1px -1px 1px var(--light1), 1px -1px 1px var(--light1), -1px 1px 1px var(--light1), 1px 1px 1px var(--light1);
 }
 
 .sheet-rolltemplate-dmg .sheet-damagetemplate .inlinerollresult.fullfail {
-    color: var(--color1);
-    background-color: #0000;
+color:var(--color1);
+background-color:#0000;
 }
 
 .diceroll.critsuccess .didroll {
-    color: var(--color1);
+color:var(--color1);
 }
 
 .textchatcontainer .inlinerollresult {
-    background-color: var(--dark4);
-    border: 2px solid var(--color3);
+background-color:var(--dark4);
+border:2px solid var(--color3);
 }
 
 .textchatcontainer .inlinerollresult.fullcrit {
-    background-color: var(--dark4);
-    border: 2px solid var(--color4);
+background-color:var(--dark4);
+border:2px solid var(--color4);
 }
 
 .textchatcontainer .inlinerollresult.fullfail {
-    background-color: var(--dark4);
-    border: 2px solid var(--color1);
+background-color:var(--dark4);
+border:2px solid var(--color1);
 }
 
 .textchatcontainer .inlinerollresult.importantroll {
-    background-color: var(--dark4);
-    border: 2px solid var(--accent4);
+background-color:var(--dark4);
+border:2px solid var(--accent4);
 }
 
-.sheet-rolltemplate-atk .sheet-advspacer,
-.sheet-rolltemplate-simple .sheet-advspacer {
-    border: 1px solid var(--dark4);
-}
-
-.sheet-rolltemplate-atk a[href^="~"] {
-    color: var(--light1);
+.sheet-rolltemplate-atk .sheet-advspacer,.sheet-rolltemplate-simple .sheet-advspacer {
+border:1px solid var(--dark4);
 }
 
 .sheet-rolltemplate-npcaction .sheet-container {
-    background-color: var(--dark3);
-    border: none;
-}
-
-.sheet-rolltemplate-npcaction .sheet-header {
-    color: var(--light1);
+background-color:var(--dark3);
+border:none;
 }
 
 .sheet-rolltemplate-npcaction div.sheet-arrow-right {
-    border-left: 14em solid var(--color5);
+border-left:14em solid var(--color5);
 }
 
-/*TEXT CHAT*/
 #textchat-input {
-    background: var(--dark2);
-    padding-left: 10px;
+background:var(--dark2);
+padding-left:10px;
+border-top:none;
 }
 
 #textchat-notifier {
-    background: var(--dark2);
-    color: var(--light1);
-    top: -25px;
+background:var(--dark2);
+color:var(--light1);
+top:-25px;
 }
 
 #textchat-input textarea {
-    background: var(--dark4);
-    border-radius: 0;
-    border: none;
-    border-color: var(--accent1);
-    color: var(--light1);
+background:var(--dark4);
+border-radius:0;
+border:none;
+color:var(--light1);
+border-color:var(--accent1);
 }
 
-#textchat-input {
-    border-top: none;
-}
-#textchat-input label {
-    color: var(--light1);
-}
-#speakingas,
-#textchat-input button {
-    background: var(--dark4);
-    color: var(--light1);
-    border-radius: 0;
-    border: none;
+#speakingas,#textchat-input button {
+background:var(--dark4);
+color:var(--light1);
+border-radius:0;
+border:none;
 }
 
-
-::-webkit-scrollbar {
-    background-color: var(--dark2);
-    width: 0px;
-}
-::-webkit-scrollbar-corner {
-    background-color: var(--dark2);
-    width: 0px;
-}
-
-/*----------------------------*/
-/*-Compendium Costumizations--*/
-/*----------------------------*/
-.dd-item > button:before,
-.dd-item .namecontainer,
-div.folder-title {
-    color: var(--light1);
-}
-
-.spacer {
-    background: none;
-}
-
-/*----------------------------*/
-/*---Handout Costumizations---*/
-/*----------------------------*/
-.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) div.sheet-page.sheet-core > div.sheet-header,
-.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) div.sheet-page.sheet-options > div.sheet-header,
-.charsheet .sheet-body,
-.ui-draggable .ui-dialog-titlebar,
-.ui-dialog .characterdialog.ui-dialog-content {
-    background-color: var(--dark1);
-}
-
-.charsheet .sheet-header span,
-.charsheet .sheet-header input,
-.ui-dialog .ui-dialog-title,
-.nav > li > a {
-    color: var(--light1);
-}
-
-
-.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) div.sheet-page > div.sheet-header::after {
-    background: none;
-}
-
-
-
-.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) div.sheet-page.sheet-core > div.sheet-header,
-.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) div.sheet-page.sheet-options > div.sheet-header {
-    background: url("https://i.imgur.com/hFrBIyM.png");
-    background-size: 850px 140px;
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) div.sheet-page.sheet-core > div.sheet-header,.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) div.sheet-page.sheet-options > div.sheet-header {
+background:url(https://i.imgur.com/hFrBIyM.png);
+background-size:850px 140px;
 }
 
 .charsheet .sheet-licensecontainer .sheet-container.sheet-pc .sheet-header .sheet-header-info {
-    background: url("https://i.imgur.com/6jqhdcR.png");
-    background-size: 464px 100.6677px;
-    background-origin: padding-box;
+background:url(https://i.imgur.com/6jqhdcR.png);
+background-size:464px 100.6677px;
+background-origin:padding-box;
 }
 
-.charsheet .sheet-npc_toggle[value="0"] ~ .sheet-pc,
-.charsheet .sheet-npc_toggle[value="1"] ~ .sheet-npc {
-    background-color: var(--dark1);
+.charsheet .sheet-advantagetoggle input[type=radio]:checked {
+background-color:#0000;
+}
+
+.charsheet input[type=radio].sheet-tab-button + span,.charsheet .sheet-advantagetoggle input[type=radio] + span {
+color:var(--light1);
+background-color:var(--dark3);
+border-radius:0;
+border-color:var(--dark3);
+}
+
+.charsheet input[type=radio].sheet-tab-button:checked + span,.charsheet .sheet-advantagetoggle input[type=radio]:checked + span {
+background-color:var(--color5);
+}
+
+::-webkit-scrollbar,::-webkit-scrollbar-corner {
+background-color:var(--dark2);
+width:0;
+}
+
+.spacer,.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) div.sheet-page > div.sheet-header::after {
+background:none;
+}
+
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) div.sheet-page.sheet-core > div.sheet-header,.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) div.sheet-page.sheet-options > div.sheet-header,.charsheet .sheet-body,.ui-draggable .ui-dialog-titlebar,.ui-dialog .characterdialog.ui-dialog-content,.charsheet .sheet-npc_toggle[value="0"] ~ .sheet-pc,.charsheet .sheet-npc_toggle[value="1"] ~ .sheet-npc {
+background-color:var(--dark1);
+}
+
+.charsheet .repcontrol .btn {
+font-size:0;
+}
+
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-subcontainer .sheet-row-container input[type="checkbox"] {
+width:.75em!important;
+height:.75em!important;
+border:none!important;
+background-color:var(--dark1);
+}
+
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-attr-container {
+background:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/ability-STR.png)!important;
+background-size:70px 74px!important;
+color:var(--light1);
+}
+
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-attr-container + .sheet-attr-container {
+background:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/ability-DEX.png)!important;
+background-size:70px 74px!important;
+color:var(--light1);
+}
+
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-attr-container + .sheet-attr-container + .sheet-attr-container {
+background:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/ability-CNS.png)!important;
+background-size:70px 74px!important;
+color:var(--light1);
+}
+
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-attr-container + .sheet-attr-container + .sheet-attr-container + .sheet-attr-container {
+background:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/ability-INT.png)!important;
+background-size:70px 74px!important;
+color:var(--light1);
+}
+
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-attr-container + .sheet-attr-container + .sheet-attr-container + .sheet-attr-container + .sheet-attr-container {
+background:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/ability-WIS.png)!important;
+background-size:70px 74px!important;
+color:var(--light1);
+}
+
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-attr-container + .sheet-attr-container + .sheet-attr-container + .sheet-attr-container + .sheet-attr-container + .sheet-attr-container {
+background:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/ability-CHA.png)!important;
+background-size:70px 74px!important;
+color:var(--light1);
+}
+
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-insp-prof-container {
+background:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/inspiration.png)!important;
+background-size:163px 40px!important;
+color:var(--light1);
 }
 
 .charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-attributes-container {
-    background: none;
-    background-color: var(--dark2);
+background:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/ability-back.png)!important;
+background-size:70px 524px!important;
 }
 
-/*
-.charsheet .sheet-attr-container button[type=roll],
-.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-attr-container{
-    background: none !important;
-    background-color: var(--dark3) !important;
-    border-radius: 0;
-    color: var(--light1);
-}
-*/
-
-/*-Advantage, Whisper and Tabs-*/
-.charsheet .sheet-advantagetoggle input[type=radio]:checked {
-    background-color: #0000;
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-insp-prof-container + .sheet-insp-prof-container {
+background:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/proficency-bonus.png)!important;
+background-size:163px 50px!important;
+color:var(--light1);
 }
 
-.charsheet input[type=radio].sheet-tab-button + span,
-.charsheet .sheet-advantagetoggle input[type=radio] + span {
-    color: var(--light1);
-    background-color: var(--dark3);
-    border-radius: 0;
-    border-color: var(--dark3);
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-saving-throw-container,.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-skills-container {
+border-image:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/saves.png) 169 50!important;
+color:var(--light1);
 }
 
-.charsheet input[type=radio].sheet-tab-button:checked + span,
-.charsheet .sheet-advantagetoggle input[type=radio]:checked + span {
-    background-color: var(--color5);
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-tool_proficiencies {
+border-image:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/proficiency-block.png) 169 50!important;
+border-image-slice:6% 8% 12% 8%!important;
+border-image-width:16px 19px 32px 19px!important;
+background-image:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/fillers/filler-dark4.png)!important;
+background-repeat:no-repeat!important;
+background-size:95% 95%!important;
+color:var(--light1);
 }
+
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-core .sheet-col2 {
+background:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/vitals.png)!important;
+background-size:247.221px!important;
+background-repeat:no-repeat!important;
+}
+
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-ac-init-speed-container .sheet-ac {
+background:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/AC.png)!important;
+background-size:71.668px 75px!important;
+}
+
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-ac-init-speed-container .sheet-init,.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-ac-init-speed-container .sheet-speed {
+background:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/vital-box.png)!important;
+background-size:71.668px 75px!important;
+}
+
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-hp {
+background:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/vital-top.png)!important;
+background-size:231.271px 95px!important;
+}
+
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-hp + .sheet-hp {
+background:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/vital-bottom.png)!important;
+background-size:231.271px 70px!important;
+}
+
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-subcontainer {
+border-image:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/vital-box.png) 105.625 54!important;
+background:none!important;
+border:6px solid #0000;
+}
+
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-attacks,.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-proficiencies,.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-traits,.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-equipment,.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-exhaustion {
+border-image:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/5eBorder.png) 169 50 round!important;
+border-image-slice:6% 8% 12% 8%!important;
+border-image-width:16px 19px 32px 19px!important;
+background-image:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/fillers/filler-dark4.png)!important;
+background-repeat:no-repeat!important;
+background-size:95% 95%!important;
+}
+
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-coin {
+background:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/copper.png)!important;
+background-size:75px 30px!important;
+}
+
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-coin + .sheet-coin {
+background:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/silver.png)!important;
+background-size:75px 30px!important;
+}
+
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-coin + .sheet-coin + .sheet-coin {
+background:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/electrum.png)!important;
+background-size:75px 30px!important;
+}
+
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-coin + .sheet-coin + .sheet-coin + .sheet-coin {
+background:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/gold.png)!important;
+background-size:75px 30px!important;
+}
+
+.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-coin + .sheet-coin + .sheet-coin + .sheet-coin + .sheet-coin {
+background:url(https://raw.githubusercontent.com/otavio-augusto/roll20-nord/master/assets/platnum.png)!important;
+background-size:75px 30px!important;
+}
+
+.charsheet .sheet-equipment .sheet-item input,.charsheet .sheet-item input[type="text"].sheet-weight,.charsheet div.sheet-globaldisplay,.charsheet .sheet-globalattack .sheet-globaldisplay button[type=roll],.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-display button *,.charsheet .sheet-pc .sheet-global-mod .sheet-options-flag:not(:checked) ~ .sheet-display .sheet-title {
+background-color:var(--dark2)!important;
+color:var(--light1)!important;
+border-radius:2px!important;
+}
+
+.charsheet .sheet-insp-prof-container .sheet-value input,.charsheet .sheet-saving-throw input[type=text],.charsheet .sheet-skill input[type=text],.charsheet .sheet-ac-init-speed-container input,.charsheet .sheet-hp input,.charsheet .sheet-exhaustion input,.charsheet .sheet-hdice-dsaves-container input[type=text],.charsheet .sheet-hdice-dsaves-container input[type=number],.charsheet .sheet-attacks input,.charsheet .sheet-equipment input,.charsheet .sheet-tool input,.charsheet .sheet-proficiencies input,.charsheet .sheet-pc .sheet-traits input,.charsheet .sheet-spell input,.charsheet .sheet-options .sheet-body input,.charsheet .sheet-resources input[type=number],.sheet-rolltemplate-atkdmg .sheet-sublabel span,.sheet-rolltemplate-dmg .sheet-sublabel span,.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-ac-init-speed-container .sheet-ac .sheet-pc-ac,.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-ac-init-speed-container .sheet-init button,.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-ac-init-speed-container .sheet-speed .sheet-label,.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-hp .sheet-label {
+color:var(--light1)!important;
+}
+
+.textchatcontainer .by,.sheet-rolltemplate-dmg .inlinerollresult.fullfail,.sheet-rolltemplate-atk a[href^="~"],.sheet-rolltemplate-npcaction .sheet-header,#textchat-input label,.dd-item > button:before,.dd-item .namecontainer,div.folder-title,.charsheet .sheet-header span,.charsheet .sheet-header input,.ui-dialog .ui-dialog-title,.nav > li > a,.charsheet .sheet-subcontainer button[type=roll],.charsheet .sheet-hdice-dsaves-container .sheet-row-container span,.charsheet .sheet-subcontainer .sheet-roll-hitdie select,.charsheet .sheet-subcontainer .sheet-roll-hitdie button[type="roll"],.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-ac-init-speed-container .sheet-init span,.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-ac-init-speed-container .sheet-speed input,.charsheet .sheet-saving-throw button[type=roll],.charsheet .sheet-skill button[type=roll],.charsheet .sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-attr-container button {
+color:var(--light1);
 }
